@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O Boleiro — bolos &amp; doces no Pirambu, Fortaleza</title>
+  <meta name="description" content="Torta de limão, bolo fofo, pudim de leite e salgados feitos na casa. Delivery no Pirambu e região, Fortaleza — pedido pelo WhatsApp em 30 a 45 minutos.">
+  <meta name="theme-color" content="#F4572B">
+  <meta property="og:title" content="O Boleiro — bolos &amp; doces">
+  <meta property="og:description" content="Bolo de verdade, feito no Pirambu. Delivery em Fortaleza, 30 a 45 minutos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F4572B'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' font-weight='700' fill='%23FFF6EE' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#conteudo">pular para o conteúdo</a>
+
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <symbol id="mascote" viewBox="0 0 120 120">
+      <path d="M44 40c0-9 6-15 13-15 2-7 12-9 16-3 7-3 14 2 14 9 6 2 9 7 9 13 0 7-6 12-13 12H50c-8 0-13-5-13-12 0-2 0-3 1-4Z" fill="#FFF6EE" stroke="#2A1210" stroke-width="3.2" stroke-linejoin="round"/>
+      <path d="M44 56h38v26a9 9 0 0 1-9 9H53a9 9 0 0 1-9-9V56Z" fill="#FFF6EE" stroke="#2A1210" stroke-width="3.2"/>
+      <path d="M44 58h38" stroke="#2A1210" stroke-width="3.2"/>
+      <path d="M63 62c-9 0-15 4-15 10 0 7 7 11 15 11s15-4 15-11c0-6-6-10-15-10Z" fill="#F7CBA8" stroke="#2A1210" stroke-width="3.2"/>
+      <circle cx="55" cy="69" r="2.4" fill="#2A1210"/>
+      <circle cx="71" cy="69" r="2.4" fill="#2A1210"/>
+      <path d="M52 82c3 3 7 4 11 4s8-1 11-4" fill="none" stroke="#2A1210" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M48 74c-2 2-1 5 1 6M78 74c2 2 1 5-1 6" fill="none" stroke="#2A1210" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M46 96h30l-6 12H52Z" fill="#F4572B" stroke="#2A1210" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <p class="topbar-place">pirambu · fortaleza — ce</p>
+      <p class="topbar-status" id="status-chip" aria-live="polite"><span class="dot-live"></span> verificando o forno…</p>
+      <a class="topbar-phone" href="tel:+558532818437">(85) 3281-8437</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="topo">
+    <div class="wrap header-inner">
+      <a class="brand" href="#topo" aria-label="O Boleiro, início">
+        <span class="brand-mark"><svg viewBox="0 0 120 120"><use href="#mascote"/></svg></span>
+        <span class="brand-text">
+          <span class="brand-word">O Boleiro<span class="dot">.</span></span>
+          <span class="brand-kicker">bolos &amp; doces</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="navegação principal">
+        <a href="#cardapio">cardápio</a>
+        <a href="#kits">kits</a>
+        <a href="#entrega">entrega</a>
+        <a href="#casa">a casa</a>
+        <a href="#contato">contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" type="button" data-cart-open aria-controls="cart" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.4 11.2a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          sacola <span class="cart-count" data-cart-count aria-hidden="true">0</span>
+          <span class="sr-only" data-cart-label>0 itens na sacola</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-inner wrap">
+      <div class="mobile-top">
+        <span class="brand-word">O Boleiro<span class="dot">.</span></span>
+        <button class="mobile-close" type="button" aria-label="Fechar menu">fechar ×</button>
+      </div>
+      <nav class="mobile-links" aria-label="navegação mobile">
+        <a href="#cardapio"><span>01</span>cardápio</a>
+        <a href="#kits"><span>02</span>kits</a>
+        <a href="#entrega"><span>03</span>entrega</a>
+        <a href="#casa"><span>04</span>a casa</a>
+        <a href="#contato"><span>05</span>contato</a>
+      </nav>
+      <div class="mobile-foot">
+        <p>Rua N. S. das Graças, 756 — Pirambu</p>
+        <p>seg a sáb, 9h às 18h · dom, 9h às 15h45</p>
+        <a href="https://wa.me/5585996877125" target="_blank" rel="noopener">pedir no whatsapp →</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <section class="hero" aria-label="apresentação">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal><span class="eyebrow-tag">novo</span> delivery no pirambu e região</p>
+          <h1 data-reveal data-delay="1">bolo de verdade,<br><em>feito no Pirambu.</em></h1>
+          <p class="hero-lede" data-reveal data-delay="2">Torta de limão, bolo fofo, pudim de leite e salgado frito na hora. A casa assa todo dia na Rua Nossa Senhora das Graças — e agora entrega na sua porta.</p>
+          <div class="hero-actions" data-reveal data-delay="3">
+            <a class="btn btn--red" href="#cardapio">ver o cardápio <span class="arrow">→</span></a>
+            <a class="btn btn--ghost" href="https://wa.me/5585996877125" target="_blank" rel="noopener">pedir no whatsapp</a>
+          </div>
+          <dl class="hero-meta" data-reveal data-delay="3">
+            <div><dt>entrega</dt><dd>30 a 45 min</dd></div>
+            <div><dt>taxa</dt><dd>a partir de R$ 6,50</dd></div>
+            <div><dt>o forno</dt><dd>9h às 18h</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art" data-reveal data-delay="2">
+          <div class="hero-panel">
+            <div class="panel-pattern" aria-hidden="true"></div>
+
+            <div class="plate">
+              <svg class="plate-mascot" viewBox="0 0 120 120" aria-hidden="true"><use href="#mascote"/></svg>
+              <span class="plate-word">O Boleiro<span class="dot">.</span></span>
+              <span class="plate-kicker">bolos &amp; doces</span>
+            </div>
+
+            <img class="hero-photo" src="assets/produtos/bolo-pudim.jpg" alt="Bolo pudim da casa" width="640" height="640">
+            <span class="photo-caption">a casa pede</span>
+
+            <span class="sticker sticker--time">30–45 min</span>
+            <span class="sticker sticker--fee">taxa a partir de R$ 6,50</span>
+            <span class="sticker sticker--verse">1 Samuel 7:12</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>torta de limão</span><span>bolo fofo</span><span>pudim de leite</span><span>bolo de macaxeira</span><span>coxinha</span><span>maria maluca</span><span>bolo pudim</span><span>casadinho</span>
+        </div>
+        <div class="marquee-group">
+          <span>torta de limão</span><span>bolo fofo</span><span>pudim de leite</span><span>bolo de macaxeira</span><span>coxinha</span><span>maria maluca</span><span>bolo pudim</span><span>casadinho</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section--menu" id="cardapio">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-num" data-reveal>01 — cardápio</span>
+          <h2 class="section-title" data-reveal data-delay="1">o balcão<br><em>inteiro.</em></h2>
+          <p class="section-aside" data-reveal data-delay="2">Nove balcões, do doce ao salgado. Escolha, monte a sacola e a gente fecha no WhatsApp — sem cadastro e sem taxa escondida.</p>
+        </div>
+
+        <div class="tabs-wrap" data-reveal>
+          <div class="tabs" id="tabs" role="group" aria-label="categorias do cardápio"></div>
+        </div>
+
+        <div class="menu-bar" data-reveal>
+          <p class="menu-status" id="menu-status" role="status" aria-live="polite"></p>
+          <p class="menu-hint">preço por unidade, fatia ou bolo inteiro</p>
+        </div>
+
+        <div class="menu-grid" id="menu-grid"></div>
+
+        <p class="menu-note" data-reveal>cento de salgado e kit festa saem por encomenda, com um dia de antecedência. para datas apertadas, chama no WhatsApp antes de fechar a sacola.</p>
+      </div>
+    </section>
+
+    <section class="kits" id="kits" aria-label="kits de festa">
+      <div class="wrap kits-inner">
+        <div class="kits-copy" data-reveal>
+          <span class="kits-tag">kit festa</span>
+          <h2 class="kits-title">aniversário<br><em>resolvido.</em></h2>
+          <p class="kits-text">Pudim grande, 50 salgadinhos e refrigerante de 2 litros. Serve a mesa toda e sai por <strong>R$ 95,99</strong>. Tem kit com torta, com 100 salgados e com torta de frango.</p>
+          <div class="kits-actions">
+            <button class="btn btn--red" type="button" data-add="t5">pôr o kit 01 na sacola <span class="arrow">→</span></button>
+            <a class="btn btn--ghost" href="#cardapio" data-goto-cat="tortas">ver todos os kits</a>
+          </div>
+        </div>
+        <figure class="kits-photo" data-reveal data-delay="1">
+          <img src="assets/produtos/kit-01.jpg" alt="Kit festa com pudim, salgadinhos e refrigerante" width="640" height="640" loading="lazy">
+          <figcaption>kit 01 — pudim grande + 50 salgados + refri 2L</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--delivery" id="entrega">
+      <div class="wrap">
+        <div class="delivery-cta" data-reveal>
+          <div class="cta-box">
+            <h3>faça o pedido pelo site</h3>
+            <p>Monte a sacola, confira o endereço e feche direto aqui. A gente confirma a taxa pelo CEP e manda sair.</p>
+            <div class="cta-pays">
+              <span>pix</span><span>débito</span><span>crédito</span><span>dinheiro</span>
+            </div>
+            <a class="btn btn--red btn--full" href="#cardapio">abrir o cardápio <span class="arrow">→</span></a>
+            <a class="btn btn--ghost btn--full" href="https://wa.me/5585996877125" target="_blank" rel="noopener">ou pedir pelo whatsapp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--casa" id="casa">
+      <div class="wrap casa-grid">
+        <figure class="casa-photo" data-reveal>
+          <img src="assets/casa.jpg" alt="Fachada laranja d'O Boleiro no Pirambu" width="1065" height="455" loading="lazy">
+          <figcaption>rua nossa senhora das graças, 756 — do jeito que você vê da calçada</figcaption>
+        </figure>
+
+        <div class="casa-copy">
+          <span class="section-num" data-reveal>03 — a casa</span>
+          <h2 class="section-title" data-reveal data-delay="1">a esquina<br>do <em>Pirambu.</em></h2>
+          <p data-reveal data-delay="2">Bolo fofo saindo do forno, torta de limão na vitrine gelada, pudim de leite de fabricação própria. O Boleiro é a padaria de bolo da Rua Nossa Senhora das Graças — a mesma casa que atende no balcão e agora entrega.</p>
+
+          <blockquote class="verse" data-reveal data-delay="2">
+            <p>“Até aqui nos ajudou o Senhor.”</p>
+            <cite>1 Samuel 7:12 — na parede da loja</cite>
+          </blockquote>
+
+          <div class="casa-info" data-reveal data-delay="3">
+            <div class="info-block">
+              <h3 class="label">endereço</h3>
+              <p>Rua Nossa Senhora das Graças, 756<br>Pirambu — Fortaleza, CE<br>60310-770</p>
+            </div>
+            <div class="info-block">
+              <h3 class="label">horário</h3>
+              <dl class="hours" id="hours-list"></dl>
+            </div>
+            <div class="info-block">
+              <h3 class="label">contato</h3>
+              <p><a href="https://wa.me/5585996877125" target="_blank" rel="noopener">(85) 99687-7125</a><br><a href="tel:+558532818437">(85) 3281-8437</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--visit" id="contato">
+      <div class="wrap visit-inner">
+        <div class="visit-copy">
+          <span class="section-num" data-reveal>04 — contato</span>
+          <h2 class="section-title" data-reveal data-delay="1">pede no<br><em>whatsapp.</em></h2>
+          <p data-reveal data-delay="2">Manda o pedido, o CEP e a forma de pagamento. A gente confirma a taxa, o horário e coloca pra sair. Pix, dinheiro, débito e vale-refeição na entrega.</p>
+          <div class="visit-actions" data-reveal data-delay="3">
+            <a class="btn btn--red" href="https://wa.me/5585996877125" target="_blank" rel="noopener">abrir o whatsapp <span class="arrow">→</span></a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Nossa+Senhora+das+Gra%C3%A7as+756+Pirambu+Fortaleza+CE" target="_blank" rel="noopener">como chegar</a>
+          </div>
+        </div>
+        <div class="visit-card" data-reveal data-delay="2">
+          <svg class="visit-mascot" viewBox="0 0 120 120" aria-hidden="true"><use href="#mascote"/></svg>
+          <p class="visit-line">seg a sáb <span>9h — 18h</span></p>
+          <p class="visit-line">domingo <span>9h — 15h45</span></p>
+          <p class="visit-line visit-line--muted">a casa abre todos os dias</p>
+          <p class="visit-pay">pix · dinheiro · débito · vale-refeição</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-pattern" aria-hidden="true"></div>
+    <div class="wrap footer-top">
+      <div class="footer-brand">
+        <p class="footer-kicker">bolos &amp; doces — pirambu, fortaleza</p>
+        <p class="footer-word">O Boleiro<span>.</span></p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h3>falar</h3>
+          <a href="https://wa.me/5585996877125" target="_blank" rel="noopener">(85) 99687-7125</a>
+          <a href="tel:+558532818437">(85) 3281-8437</a>
+        </div>
+        <div>
+          <h3>chegar</h3>
+          <p>R. N. S. das Graças, 756<br>Pirambu — Fortaleza, CE<br>60310-770</p>
+        </div>
+        <div>
+          <h3>pagar</h3>
+          <p>Pix · dinheiro<br>débito · vale-refeição</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© <span id="year">2026</span> O Boleiro Bolos</span>
+      <span>feito com farinha, ovo e tempo.</span>
+      <a href="#topo">voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" data-cart-close hidden></div>
+  <aside class="cart" id="cart" aria-hidden="true" aria-label="sua sacola">
+    <header class="cart-head">
+      <div>
+        <p class="cart-kicker" id="cart-kicker">passo 1 de 2</p>
+        <h2 class="cart-title">sua sacola</h2>
+      </div>
+      <button class="cart-close" type="button" data-cart-close aria-label="Fechar sacola">×</button>
+    </header>
+
+    <div class="cart-body">
+      <div class="cart-empty" id="cart-empty">
+        <svg viewBox="0 0 120 100" fill="none" aria-hidden="true">
+          <path d="M28 38h64l-8 50H36Z" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M44 38V28a16 16 0 0 1 32 0v10" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M50 62h20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <p>a sacola está vazia.<br>o forno, não.</p>
+        <button class="btn btn--red btn--full" type="button" data-cart-close data-go-menu>ver o cardápio</button>
+      </div>
+
+      <div class="cart-step" data-step="1" hidden>
+        <div class="mode" role="group" aria-label="forma de recebimento">
+          <button class="mode-btn is-active" type="button" data-mode="delivery" aria-pressed="true">entrega</button>
+          <button class="mode-btn" type="button" data-mode="pickup" aria-pressed="false">retirada</button>
+        </div>
+
+        <ul class="cart-items" id="cart-items"></ul>
+
+        <dl class="cart-totals">
+          <div><dt>subtotal</dt><dd id="sum-subtotal">R$ 0,00</dd></div>
+          <div id="row-fee"><dt>entrega</dt><dd id="sum-fee">—</dd></div>
+          <div class="grand"><dt>total</dt><dd id="sum-total">R$ 0,00</dd></div>
+        </dl>
+        <p class="cart-hint" id="fee-hint">a taxa de entrega é confirmada pelo CEP no WhatsApp (R$ 6,50 a R$ 20,50).</p>
+
+        <button class="btn btn--red btn--full" type="button" id="to-checkout">continuar <span class="arrow">→</span></button>
+        <p class="cart-secure">o pedido é fechado no WhatsApp, com uma pessoa do balcão.</p>
+      </div>
+
+      <form class="cart-step cart-form" data-step="2" id="checkout" novalidate hidden>
+        <button class="back-link" type="button" id="back-to-cart">← voltar para a sacola</button>
+
+        <div class="field">
+          <label for="f-name">nome</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+          <span class="field-error" data-error-for="f-name"></span>
+        </div>
+
+        <div class="field">
+          <label for="f-phone">telefone</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(85) 90000-0000" required>
+          <span class="field-error" data-error-for="f-phone"></span>
+        </div>
+
+        <div class="address-fields" id="address-fields">
+          <div class="field-row">
+            <div class="field field--cep">
+              <label for="f-cep">CEP</label>
+              <input id="f-cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="60000-000" required>
+              <span class="field-error" data-error-for="f-cep"></span>
+            </div>
+            <div class="field field--grow">
+              <label for="f-district">bairro</label>
+              <input id="f-district" name="district" type="text" required>
+              <span class="field-error" data-error-for="f-district"></span>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field field--grow">
+              <label for="f-street">rua</label>
+              <input id="f-street" name="street" type="text" autocomplete="address-line1" required>
+              <span class="field-error" data-error-for="f-street"></span>
+            </div>
+            <div class="field field--num">
+              <label for="f-number">número</label>
+              <input id="f-number" name="number" type="text" inputmode="numeric" required>
+              <span class="field-error" data-error-for="f-number"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-extra">complemento <span class="opt">(opcional)</span></label>
+            <input id="f-extra" name="extra" type="text" autocomplete="address-line2">
+          </div>
+          <div class="field">
+            <label for="f-ref">ponto de referência <span class="opt">(opcional)</span></label>
+            <input id="f-ref" name="ref" type="text">
+          </div>
+        </div>
+
+        <div class="pickup-note" id="pickup-note" hidden>
+          <p><strong>retirada no balcão</strong><br>Rua Nossa Senhora das Graças, 756 — Pirambu.<br>Separe o pedido no nome de quem vai buscar.</p>
+        </div>
+
+        <fieldset class="pay">
+          <legend>pagamento</legend>
+          <div class="pay-grid" id="pay-grid"></div>
+        </fieldset>
+
+        <div class="field" id="change-field" hidden>
+          <label for="f-change">troco para quanto?</label>
+          <input id="f-change" name="change" type="text" inputmode="decimal" placeholder="ex.: 100,00">
+        </div>
+
+        <div class="field">
+          <label for="f-notes">observações <span class="opt">(opcional)</span></label>
+          <textarea id="f-notes" name="notes" rows="2" placeholder="sem cebola, entregar na portaria..."></textarea>
+        </div>
+
+        <dl class="cart-totals cart-totals--compact">
+          <div><dt>subtotal</dt><dd id="sum-subtotal-2">R$ 0,00</dd></div>
+          <div id="row-fee-2"><dt>entrega</dt><dd id="sum-fee-2">—</dd></div>
+          <div class="grand"><dt>total</dt><dd id="sum-total-2">R$ 0,00</dd></div>
+        </dl>
+
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+        <button class="btn btn--red btn--full" type="submit">enviar no whatsapp <span class="arrow">→</span></button>
+        <p class="cart-secure">abre o WhatsApp com o pedido escrito. é só conferir e enviar.</p>
+      </form>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- whatsapp flutuante (só ícone) -->
+  <a class="fab-whatsapp" href="https://wa.me/5585996877125" target="_blank" rel="noopener" aria-label="falar pelo whatsapp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Z" fill="none" stroke="#FFF6EE" stroke-width="2.2"/><path d="M8.4 7.6c-.5 0-.9.2-1.2.6-.4.4-.9 1.1-.9 2.1 0 1 .7 2 1.2 2.6.6.8 2.2 2.4 4.1 3.2 1.5.6 2.3.6 2.9.5.7-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.1-1.2l-1.9-.9c-.2-.1-.4 0-.6.2l-.7.8c-.1.2-.3.2-.5.1-.6-.2-1.4-.7-2-1.4-.5-.6-.8-1.2-.9-1.5 0-.2 0-.3.2-.4l.6-.6c.2-.2.2-.4.1-.6l-.8-1.8c-.1-.3-.3-.3-.5-.3Z" fill="#FFF6EE"/></svg>
+  </a>
+
+  <!-- suporte via site -->
+  <button class="fab-support" type="button" data-support-open aria-label="abrir suporte">?</button>
+
+  <div class="support-overlay" data-support-close hidden></div>
+  <aside class="support-modal" id="support-modal" aria-hidden="true" aria-label="suporte">
+    <header class="support-head">
+      <div>
+        <p class="support-kicker">suporte</p>
+        <h2 class="support-title">fale com a casa</h2>
+      </div>
+      <button class="support-close" type="button" data-support-close aria-label="Fechar suporte">×</button>
+    </header>
+    <div class="support-body">
+      <form class="support-form" id="support-form" novalidate>
+        <div class="field">
+          <label for="sup-name">seu nome</label>
+          <input id="sup-name" name="name" type="text" autocomplete="name" required>
+          <span class="field-error" data-error-for="sup-name"></span>
+        </div>
+        <div class="field">
+          <label for="sup-phone">telefone</label>
+          <input id="sup-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(85) 90000-0000" required>
+          <span class="field-error" data-error-for="sup-phone"></span>
+        </div>
+        <div class="field">
+          <label for="sup-message">o que precisa?</label>
+          <textarea id="sup-message" name="message" rows="3" required placeholder="conte o que aconteceu..."></textarea>
+          <span class="field-error" data-error-for="sup-message"></span>
+        </div>
+        <div class="field">
+          <label for="sup-order">número do pedido (opcional)</label>
+          <input id="sup-order" name="order" type="text" placeholder="deixe em branco se não tiver">
+        </div>
+        <p class="form-error" id="support-error" role="alert" hidden></p>
+        <button class="btn btn--red btn--full" type="submit">enviar suporte <span class="arrow">→</span></button>
+        <p class="cart-secure">a mensagem vai direto pro WhatsApp da casa.</p>
+      </form>
+    </div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
